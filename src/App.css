@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+a {
+  text-decoration: none ;
+}
+img {
+  max-width: 100%;
+}
+.app {
+  background-color: #282c34;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  width: 100%;
+  color: #fff;
+}
+.header__top-part {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__level-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+.header__level-item:first-of-type {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.header__level-item {
+  width: 17%;
+  padding: 5px 0;
+  background-color: #9b9b9b;
+  text-align: center;
+}
+.question {
+  color: #fff;
+  background-color: #4682b4;
+  border: 1px solid #00bfff;
+  border-radius: 4px;
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+}
+.question__bird-image {
+  width: 200px;
+  height: 155px;
+  border-radius: 10px;
+}
+.question__content {
+  padding-left: 40px;
+  width: 100%;
+}
+.question__audio-player {
+  width: 100%;
+}
+.App__answers-and-info {
+  display: flex;
+  justify-content: space-between;
+}
+.answers {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.answers__button:first-of-type {
+  border-top: 1px solid #00bfff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.answers__button {
+  padding: 10px 0 10px 20px;
+  text-align: left;
+  color: #fff;
+  background-color: #4682b4;
+  border: 0;
+  border-bottom: 1px solid #00bfff;
+  border-right: 1px solid #00bfff;
+  border-left: 1px solid #00bfff;
+}
+.circle {
+  margin-right: 15px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9b9b9b;
+}
+.answers__button:hover {
+  background-color: #0d4f8b;
+}
+.description {
+  color: #fff;
+  background-color: #4682b4;
+  border: 1px solid #00bfff;
+  border-radius: 4px;
+  width: 49%;
+  height: 272px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.description__start-text {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.App__button {
+  color: #fff;
+  background-color: #008b00;
+  border: 1px solid #32cd32;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+.App__gameover {
+  color: #fff;
+  background-color: #4682b4;
+  margin-top: 25px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+.App__gameover, .App__win {
+  border: 1px solid #00bfff;
+  border-radius: 4px;
+}
+.description__img {
+  width: 200px;
+  height: 155px;
+}
+.description__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.description__content {
+  display: flex;
+}
+.description__left-side {
+  width: 100%;
+  padding-left: 20px;
+}
+.App__button[disabled] {
+  background-color: #9b9b9b;
+  border: 1px solid #9b9b9b;
+}
